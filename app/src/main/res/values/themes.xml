@@ -3,6 +3,7 @@
     <style name="Base.Theme.TeachKotlin" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="strokeColor">#FFFFFF</item>
     </style>
 
     <style name="Theme.TeachKotlin" parent="Base.Theme.TeachKotlin" />

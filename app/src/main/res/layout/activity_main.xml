@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
@@ -7,66 +7,50 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="start|center_vertical"
-        android:orientation="vertical">
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:singleLine="true"
+        android:text="Что изучим сегодня?"
+        android:textSize="20sp" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="3dp"
-            android:background="@drawable/shape_unit"
-            android:gravity="start|center_vertical">
+    <LinearLayout style="@style/Unit_layout">
 
-            <TextView
-                android:id="@+id/textView"
-                style="@style/Unit_number"
-                android:layout_margin="10dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="1"
-                android:textSize="50sp" />
+        <TextView
+            android:id="@+id/textView"
+            style="@style/Unit_number"
+            android:text="1" />
 
-            <TextView
-                style="@style/Unit_description_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:text="Kotlin"
-                android:textAllCaps="true"
-                android:textSize="20sp" />
-        </LinearLayout>
+        <TextView
+            style="@style/Unit_description_text"
+            android:text="Kotlin" />
+    </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_margin="3dp"
-            android:background="@drawable/shape_unit"
-            android:gravity="start|center_vertical">
+    <LinearLayout style="@style/Unit_layout">
 
-            <TextView
-                android:id="@+id/textView2"
-                style="@style/Unit_number"
-                android:layout_margin="10dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="2"
-                android:textSize="50sp" />
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/Unit_number"
+            android:text="2" />
 
-            <TextView
-                style="@style/Unit_description_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:text="Android"
-                android:textAllCaps="true"
-                android:textSize="20sp" />
-        </LinearLayout>
+        <TextView
+            style="@style/Unit_description_text"
+            android:text="Android" />
+    </LinearLayout>
 
+    <LinearLayout style="@style/Unit_layout">
 
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/Unit_number"
+            android:text="3" />
+
+        <TextView
+            style="@style/Unit_description_text"
+            android:text="layouts" />
     </LinearLayout>
 
 
-</ScrollView>
+</LinearLayout>
