@@ -23,4 +23,9 @@
         <item name="android:background">@drawable/shape_unit</item>
         <item name="android:gravity">start|center_vertical</item>
     </style>
+
+    <style name="back_button">
+        <item name="android:background">@drawable/shape_button</item>
+
+    </style>
 </resources>
