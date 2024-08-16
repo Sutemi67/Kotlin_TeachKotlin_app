@@ -37,7 +37,9 @@
                 android:text="Kotlin" />
         </LinearLayout>
 
-        <LinearLayout style="@style/Unit_layout">
+        <LinearLayout
+            android:id="@+id/androidButton"
+            style="@style/Unit_layout">
 
             <TextView
                 android:id="@+id/textView2"
@@ -49,7 +51,9 @@
                 android:text="Android" />
         </LinearLayout>
 
-        <LinearLayout style="@style/Unit_layout">
+        <LinearLayout
+            android:id="@+id/layoutsButton"
+            style="@style/Unit_layout">
 
             <TextView
                 android:id="@+id/textView3"
