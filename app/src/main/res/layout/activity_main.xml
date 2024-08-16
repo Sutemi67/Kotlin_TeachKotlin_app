@@ -23,7 +23,9 @@
         android:layout_marginBottom="100dp"
         android:orientation="vertical">
 
-        <LinearLayout style="@style/Unit_layout">
+        <LinearLayout
+            android:id="@+id/kotlin_button"
+            style="@style/Unit_layout">
 
             <TextView
                 android:id="@+id/textView"
@@ -61,11 +63,11 @@
     </LinearLayout>
 
     <Button
-        android:backgroundTint="@color/unit_bg"
-        android:textColor="@color/black"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:text="Exit" />
+        android:backgroundTint="@color/unit_bg"
+        android:text="Exit"
+        android:textColor="@color/black" />
 
 </LinearLayout>
